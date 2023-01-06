@@ -58,10 +58,6 @@ Testez la réponse à la requête en vérifiant que chaque clé est associée à
 
 ---
 
-
-
-
-
 **EXERCICE 4 :**
 
 La route ``test-user`` : 
@@ -92,6 +88,31 @@ La route ``test-user`` :
 
 - Vérifiez que la date ``registeredAt`` est plus récente que le ``01 Janvier 2020``
 
+**EXERCICE 5 :**
+
+La route ``test-post`` : 
+
+- Utilise la méthode ``POST``
+
+- Renvoi une liste d'entiers
+
+- Nécessite de confirmer une connexion. Pour cela, on passe un token dans le header de la requête vers l'API. 
+
+  token : ``'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'``
+
+**PREMIERE SERIE :**
+
+- Vérifiez que l'envoi d'un mauvais token retourne un statut ``403``
+
+- Vérifiez que l'envoi du bon token retourne un statut ``200``
+
+**DEUXIEME SERIE :**
+
+- Vérifiez que la liste renvoyée par la requête comporte bien 4 éléments au maximum. 
+
+- Vérifiez que le dernier item de la liste soit toujours égal à 2008. Assurez vous d'écrire un test scalable qui ne sera pas rendu obsolète par une modification ultérieure de la requête (ex: plus de 4 éléments dans la liste).
+
+
 
 ---
  
@@ -99,7 +120,6 @@ La route ``test-user`` :
 
 [API de test ](https://api-test-jest.up.railway.app/)
 
-[Repo GitHub](https://github.com/8astien/API-test-JEST)
 
 Routes : 
 
@@ -107,10 +127,6 @@ Routes :
 
 /test-get : retourne un objet JSON
 
-/test-post : EN COURS
-
 /test-user : retourne un objet JSON contenant les infos d'un utilisateur aléatoire (id, firstName, lastName, email, registeredAt)
-# TP-Jest-API
-# TP-Jest-API
-# TP-Jest-API
-# TP-JEST
+
+/test-post : EN COURS

@@ -25,7 +25,7 @@ app.get('/test-get', (req, res) => {
 
 app.post('/test-post', function (req, res) {
 
-  if(req.body.token === token) {
+  if(req.headers.token === token) {
     res.send(years)
   }
   else {

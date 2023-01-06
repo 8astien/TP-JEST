@@ -4,7 +4,7 @@ function testHealtcheck(url) {
         expect(response.status).toBeLessThan(400);
 	});
 }
-test("Statut 200 : Request fullfiled", () => {
+test("Status 200 : Healthcheck ok", () => {
 	return testHealtcheck("https://api-test-jest.up.railway.app/healthcheck");
 });
 

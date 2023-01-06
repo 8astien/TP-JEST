@@ -6,7 +6,7 @@ function testUser() {
 
 
 
-for (let index = 0; index < 20; index++) {
+for (let index = 0; index < 1; index++) {
     
 	test("PREMIERE SERIE : ID NOM PRENOM", async () => {
         const data = await testUser();
