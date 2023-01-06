@@ -110,7 +110,3 @@ Routes :
 /test-post : EN COURS
 
 /test-user : retourne un objet JSON contenant les infos d'un utilisateur aléatoire (id, firstName, lastName, email, registeredAt)
-# TP-Jest-API
-# TP-Jest-API
-# TP-Jest-API
-# TP-JEST
