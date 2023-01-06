@@ -129,4 +129,4 @@ Routes :
 
 /test-user : retourne un objet JSON contenant les infos d'un utilisateur aléatoire (id, firstName, lastName, email, registeredAt)
 
-/test-post : EN COURS
+/test-post : retourne une liste d'entiers après avoir prouvé la connexion
